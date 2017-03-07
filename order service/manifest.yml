@@ -1,0 +1,14 @@
+instances: 1
+memory: 1G
+domain: cfapps.io
+applications:
+  - name: tmobileorderservicedemo
+    services:
+      - service-registry
+      - circuitbreaker-tmo-dashboard
+      - tmodb
+      - p-config-server
+    env:
+     SPRING_PROFILES_ACTIVE: dev
+
+       
