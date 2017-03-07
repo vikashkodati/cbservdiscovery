@@ -1,0 +1,12 @@
+instances: 1
+memory: 1G
+domain: cfapps.io
+applications:
+  - name: tmoWrapperService
+    services:
+      - service-registry
+      - circuitbreaker-tmo-dashboard
+      - p-config-server
+    env:
+     SPRING_PROFILES_ACTIVE: dev
+       
